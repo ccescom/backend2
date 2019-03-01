@@ -20,7 +20,7 @@ def message():
     for i in range(len(to_)) :
         to_[i] = '91' + to_[i]
 
-    send_voice_call('./services/creds.json', result_ln, lang = 'hi-IN', to = to_)
+    send_voice_call('./serv/creds.json', result_ln, lang = 'hi-IN', to = to_)
 
     return jsonify ({
         'success' : True
