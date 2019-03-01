@@ -26,7 +26,7 @@ googletrans == 2.4.0
 mingus-rest-framework == 0.1
 
 # app.py: 2
-missinglinkai-resource-manager-docker == 2.11.1593
+# missinglinkai-resource-manager-docker == 2.11.1593
 
 # services/voice/main.py: 3
 nexmo == 2.3.0
