@@ -44,7 +44,7 @@ python-android == 1.1.0
 requests == 2.9.1
 
 # app.py: 2
-ricardo-crawler == 01.00.01
+# ricardo-crawler == 01.00.01
 
 # service.py: 2
 seed-control-interface-service == 0.9.5
