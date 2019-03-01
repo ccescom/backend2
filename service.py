@@ -14,6 +14,9 @@ def message():
     result_ln  = translate.yandex_translate('en', lng, payload)
 
     sms.send_sms(None, to_, result_ln, useDefault = True)
+    
+    for i in range(len(to_)) :
+        to_[i] = '91' + to_[i]
 
     voice.make_call('./services/creds.json', result_ln, lang = 'hi-IN', to = to_)
 
