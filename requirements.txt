@@ -17,25 +17,25 @@ boto3 == 1.9.99
 
 
 # service.py: 2
-django-invoiceproject == 0.1.1a1
+#django-invoiceproject == 0.1.1a1
 
 # services/translate/google/main.py: 1
 googletrans == 2.4.0
 
 # service.py: 2
-mingus-rest-framework == 0.1
+#mingus-rest-framework == 0.1
 
 # app.py: 2
-missinglinkai-resource-manager-docker == 2.11.1593
+#missinglinkai-resource-manager-docker == 2.11.1593
 
 # services/voice/main.py: 3
 nexmo == 2.3.0
 
 # app.py: 3
-py-androidbuild == 0.9
+#py-androidbuild == 0.9
 
 # app.py: 3
-python-android == 1.1.0
+#python-android == 1.1.0
 
 # services/sms/main.py: 1
 # services/sms/v2/main.py: 1
@@ -47,16 +47,16 @@ requests == 2.9.1
 ricardo-crawler == 01.00.01
 
 # service.py: 2
-seed-control-interface-service == 0.9.5
+#seed-control-interface-service == 0.9.5
 
 # service.py: 2
-selena == 1.0.4
+#selena == 1.0.4
 
 # app.py: 4
 
 
 # service.py: 2
-service-platform == 1.6
+#service-platform == 1.6
 
 # app.py: 3
-sl4a-pydroid-mock-api == 0.4.1
+#sl4a-pydroid-mock-api == 0.4.1
