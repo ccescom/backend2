@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
-from services.sms import send_sms
-from services.voice import make_call
+from serv.sms import send_sms
+from serv.translate import translate_text
+from serv.voice import send_voice_call
 
 
 serv = Blueprint("service", __name__)
@@ -12,14 +13,14 @@ def message():
     lng = request.get_json()['lang']
 
     #translate : 
-    result_ln  = translate.yandex_translate('en', lng, payload)
+    result_ln  = translate_text('en', lng, payload)
 
     send_sms(None, to_, result_ln, useDefault = True)
     
     for i in range(len(to_)) :
         to_[i] = '91' + to_[i]
 
-    make_call('./services/creds.json', result_ln, lang = 'hi-IN', to = to_)
+    send_voice_call('./services/creds.json', result_ln, lang = 'hi-IN', to = to_)
 
     return jsonify ({
         'success' : True
