@@ -32,3 +32,4 @@ def insert_() :
         'success' : True,
         'result' : 'Inserted'
     })
+
