@@ -6,7 +6,7 @@ android_api = Blueprint("android_api", __name__)
 @android_api.route('/api/android/login', methods = ['POST'])
 def android_login() :
 
-    query = "select FeederID, FarmerID from Farmer where Mobile =:Mobile"
+    query = "select FeederID, FarmerID, Farmer_Name, Mobile, Land_Size from Farmer where Mobile =:Mobile"
 
     result = dbase.select(query, {
         "Mobile" : request.get_json()['Mobile']
