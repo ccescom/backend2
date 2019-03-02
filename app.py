@@ -27,4 +27,4 @@ def api() :
         ]
     })
 
-app.run()
+app.run(port = 7000)
