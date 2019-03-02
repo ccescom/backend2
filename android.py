@@ -26,7 +26,10 @@ def android_login() :
         'success' : True,
         'login' : True,
         'FarmerID' : result[0]['FarmerID'],
-        'FeederID' : result[0]['FeederID']
+        'FeederID' : result[0]['FeederID'],
+        'Farmer_Name' : result[0]['Farmer_Name'],
+        'Mobile' : result[0]['Mobile'],
+        'Acres' : result[0]['Land_Size']
     })
 
 @android_api.route('/api/android/get_schedule', methods = ['POST'])
